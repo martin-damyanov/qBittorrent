@@ -369,7 +369,7 @@ void AddNewTorrentDialog::saveSavePathHistory() const
         // Add save path to history
         history.push_front(selectedSavePath.absolutePath());
         // Limit list size
-        if (history.size() > 8)
+        if (history.size() > 20)
             history.pop_back();
         // Save history
         settings()->storeValue(KEY_SAVEPATHHISTORY, history);
